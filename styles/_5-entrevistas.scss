@@ -1,0 +1,17 @@
+.entrevistas {
+    margin-top: 3rem;
+
+    h2 {
+        width: 70%;
+        margin-bottom: 0.875rem;
+        padding-left: 1rem;
+        @include h2;
+        color: $textoprimario;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}

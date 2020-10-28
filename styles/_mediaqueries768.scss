@@ -1,0 +1,198 @@
+//--------->=768px---------      
+@media screen and (min-width:768px) {
+
+    html {
+        font-size: 20px;
+    }
+
+ //header
+
+    header{
+        padding: 0rem 2rem;
+    }
+
+    input[type=checkbox]:checked~ul {
+        height: 298px;
+    }
+
+ //titulo 
+
+    .titulo {
+        padding: 4.7rem 3rem 0 3rem ;
+        
+
+        h1 {
+            font-size: 2.9rem;
+
+            .punto {
+                color: $gradiente1;
+            }
+        }
+
+        p{
+            .txt1{
+                display: inline;
+            }
+            .txt2{
+                display: none;
+            }
+        }      
+
+        .contenedorboton{
+            margin: 0 auto;
+            
+            a{
+                .boton{
+                    display: inline-block;
+                    padding: 0.8rem 4rem; 
+                }
+            }
+        }
+    }
+
+ //episodios 
+
+    .episodios {
+        min-height: 600px;
+        justify-content: flex-start;
+        
+        .fondo {
+            min-height: 600px;
+        }
+
+        h2{
+            padding: 0rem 4rem;
+        }
+
+        .spotify {
+            padding: 0rem 1rem;
+            display: flex;
+            flex-flow: row wrap;
+        
+            iframe {
+                width: 46%;
+                height: 170px;
+            }
+        }
+    }
+
+ //nosotros    
+
+    .nosotros {
+        padding: 0 1rem;
+        min-height: 400px;
+        margin-top: 0rem;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+
+        img {
+            margin-top: -3.5em;
+            width: 50%;
+        }
+
+        .sobrenosotros{
+            width: 50%;
+
+            h2 {
+                margin-top: 0;
+                margin-bottom: 0.6rem;
+            }
+        }
+    }
+
+ //entrevistas    
+
+    .entrevistas {
+        display: flex;
+        flex-flow: row wrap;
+
+        h2{
+            padding: 0rem 4rem;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+    }
+
+ //topicos    
+
+    .topicos {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+
+        h2{
+            margin-bottom: 3rem;
+            padding: 0rem 4rem;
+        }
+       
+        .top{
+            margin-bottom: 0rem;
+            margin: 0 auto;
+            width: 25%;
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            img {
+                margin-bottom: 1.25rem;
+            }
+        }
+    }
+
+ //novedades    
+
+    .novedades {
+        min-height: 441px;
+        flex-flow: column wrap;
+        justify-content: center;
+
+        .fondo2 {
+            top: 12%;
+        }
+        h2 {
+            margin-top: 2rem;
+            font-size: 2rem;
+        }
+        
+        .contenedorboton{
+            margin: 0 auto;
+            
+            a{
+                .boton{
+                    display: inline-block;
+                    padding: 0.8rem 4rem;
+                }
+            }
+        }
+    }
+
+ //footer    
+
+    footer {
+        min-height: 70px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: baseline;
+
+        p {
+            width: 37%;
+            height: 30px;
+            margin: 20px 0 0 0;
+            padding-left: 2rem;
+        }
+
+        .redes {
+            width: 30%;
+            height: 30px;
+            margin: 20px 0 0 0;
+            padding-right: 2rem;
+        }
+    }
+}
+

@@ -1,0 +1,36 @@
+// Colores
+
+$gradiente1: #0000FF;
+$gradiente2: #0000A3;
+$colorboton: #00F3BB;
+$textoprimario: #060A24;
+$textosecundario: #FFFFFF;
+$textoactive: rgba(6,10,36,0.56);
+
+// Fuentes
+
+$SansRegular: "SansRegular",Arial, Helvetica, sans-serif;
+$SansSemibold: "SansSemibold",Arial, Helvetica, sans-serif;
+$MonoRegular: "MonoRegular",Arial, Helvetica, sans-serif;
+$MonoMedium: "MonoMedium",Arial, Helvetica, sans-serif;
+
+@font-face{
+    font-family: "MonoRegular";
+    src: url('../fonts/IBMPlexMono-Regular.ttf');
+}
+
+@font-face{
+    font-family: "MonoMedium";
+    src: url('../fonts/IBMPlexMono-Medium.ttf');
+}
+
+@font-face{
+    font-family: "SansRegular";
+    src: url('../fonts/IBMPlexSans-Regular.ttf');
+}
+
+@font-face{
+    font-family: "SansSemibold";
+    src: url('../fonts/IBMPlexSans-SemiBold.ttf'); 
+}
+

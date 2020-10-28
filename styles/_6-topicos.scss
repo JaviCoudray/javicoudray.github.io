@@ -1,0 +1,32 @@
+.topicos {
+    margin-top: 3rem;
+
+    h2 {
+        width: 79%;
+        margin-bottom: 1.6rem;
+        padding-left: 1rem;
+        @include h2;
+        color: $textoprimario;
+    }
+
+    .top {
+        text-align: center;
+        margin-bottom: 3.06rem;
+
+        img {
+            margin-bottom: 0.812rem;
+        }
+
+        p {
+            font-family: $SansSemibold;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            text-align: center;
+            color: $textoprimario;
+        }
+    }
+
+    .top4 {
+        margin-bottom: 1.5rem;
+    }
+}

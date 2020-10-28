@@ -1,0 +1,31 @@
+footer {
+    position: relative;
+    text-align: center;
+    max-height: 31px;
+
+    p {
+        width: 100%;
+        margin: 1.5rem auto 1rem auto;
+        @include p;
+        color: $textoprimario;
+    }
+
+    .redes {
+        width: 70%;
+        margin: 0 auto 1.93rem auto;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        display: flex;
+        justify-content: space-between;
+        
+        a > i{
+            color: $textoprimario;
+            transition: transform .1s ease-in-out;
+
+            &:hover{
+                transform: scale(1.2);
+                color: $colorboton;
+            }
+        }
+    }   
+}

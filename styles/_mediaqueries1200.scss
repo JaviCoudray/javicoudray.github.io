@@ -1,0 +1,266 @@
+@mixin h1 {
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+}
+
+@mixin h2 {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+}
+
+@mixin p {
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+@mixin boton {
+    font-size: 1rem;
+    line-height: 1.2rem; 
+}
+
+//--------->=1200px---------   
+
+@media screen and (min-width:1200px) {
+
+ //header
+    
+    header {
+        height: 80px;
+        padding: 0 5rem 0 5rem;
+        position: relative;
+        box-shadow: none;
+        
+        img {
+            height: 1.8rem;
+        }
+
+        nav {
+          
+            .abierto{
+                display: none;
+            } 
+                
+            .cerrado{
+                display: none;
+            }
+
+            ul {
+                height: 80px;
+                width: auto;
+                top: 0;
+                right: 5rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                background: $textosecundario;
+                    
+                li {
+                    a {
+                        color: $textoprimario;
+                        font-size: .8rem;
+                        line-height: 1.4rem;
+                        padding: 0 0 0 2.4rem;
+                    }
+                }  
+            }
+        }
+    }  
+
+ //titulo 
+ 
+    .titulo {
+        padding-top: 6rem;
+        padding-left: 10rem;
+
+        h1 {
+            @include h1;
+            padding: 0;
+            
+            .salto{
+                display: inline;
+            }
+        }
+
+        p {
+            width: 55%;
+            margin-top: 0;
+            @include p;
+            padding: 0;
+        }
+
+        .contenedorboton {
+            margin-top: 2.8rem;
+            padding: 0;
+            
+            a{
+                .boton {
+                    @include boton;
+                    padding: 0.8rem 3rem;              
+
+
+                }
+            }
+        }
+    }
+      
+ //episodios 
+
+    .episodios{
+        min-height: 900px;
+
+        .fondo {
+            min-height: 900px;
+        }
+
+        h2{
+            @include h2;
+            padding: 2.8rem 0 0 10rem;
+        }
+
+        .spotify {
+            padding: 0 5rem;
+            justify-content: space-between;
+        
+            iframe {
+                margin: 0 0 3.6rem 0;
+                width: 47.5%;
+                height: 232px;
+            }
+        }
+    }
+
+ //nosotros 
+
+    .nosotros {
+        padding: 0 12.5rem 0 10rem;    
+        align-items: flex-start;
+        min-height: 600px;
+
+        img {
+            margin: -5.3rem 4.5rem 0 0;
+            max-width: 30vmax;    
+        }
+
+        .sobrenosotros{
+            width: 100%;
+            
+            h2 {
+                padding: 0;
+                width: 100%;
+                margin: 5rem 0 1.2rem 0;
+                @include h2;
+            }
+
+            p{         
+                padding: 0;
+                @include p;
+                
+            }          
+        }
+    }
+
+ //entrevistas 
+
+    .entrevistas {
+
+        h2{
+            @include h2;
+            padding: 0 10rem;
+        }
+
+        img {
+            width: 33.33%;
+            height: auto;
+            transition: transform .4s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+ //topicos 
+
+    .topicos {
+        padding: 0 10rem;
+     
+        
+        h2{
+            padding: 0;
+            margin-bottom: 3.5rem;
+            @include h2;
+        }
+
+        .top{ 
+            margin-bottom: 0rem;
+            width: 23%;
+            
+            p {
+                font-size: 1.2rem;
+            }
+
+            img {
+                margin-bottom: 1.25rem;
+                transition: transform .5s ease-in-out;   
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+
+ //novedades 
+
+    .novedades {
+        min-height: 518px;
+
+        .fondo2 {
+            top: 13%;
+        }
+
+        h2 {
+            margin-top: 2.5rem;
+            @include h2;
+        }
+        
+        .contenedorboton{
+            margin: 0 auto;
+
+            a{
+                .boton{
+                    padding: 0.8rem 2.2rem;
+                    @include boton;
+                }
+            }
+        }
+    }
+
+ //footer 
+ 
+    footer {
+        min-height: 95px;
+
+        p {
+            text-align: left;
+            margin: 1.8rem 0 0 0;
+            padding-left: 5rem;
+            @include p;
+        }
+
+        .redes {
+            width: 17%;
+            margin: 1.8rem 0 0 0;
+            padding-right: 5rem;  
+        }  
+    }
+}
+
+
+
+
+
+
+
+

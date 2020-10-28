@@ -1,0 +1,64 @@
+@import 'variables';
+
+// Mixin
+
+@mixin h1 {
+  font-family: $SansRegular;
+  font-size: 2.25rem;
+  line-height: normal;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+
+@mixin h2 {
+  font-family: $SansRegular;
+  font-weight: normal;
+  font-size: 2.25em;
+  letter-spacing: 0;
+  line-height: normal;   
+}
+
+@mixin p {
+  font-family: $MonoRegular;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+}
+
+@mixin boton {
+  font-family: $MonoMedium;
+  font-size: 1rem;
+  text-align: center;
+  background: $colorboton;
+  color: $textoprimario;  
+  line-height: 1.5rem;  
+}
+
+// General
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+// Especifico 
+
+@import '1-header';
+@import '2-titulo';
+@import '3-episodios';
+@import '4-nosotros';
+@import '5-entrevistas';
+@import '6-topicos';
+@import '7-novedades';
+@import '8-footer';
+
+// Mediaqueries
+
+@import 'mediaqueries768'; 
+@import 'mediaqueries1200'; 
+
